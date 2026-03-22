@@ -10,3 +10,18 @@ If you’ve been looking for:
 
 …you’re in the right repo.
 
+---
+
+## What it does
+
+- **Watches** a target user (address or username → proxy) on Polymarket
+- **Polls periodically** and fetches recent activity
+- **Copies trades** to your account with optional risk controls (multiplier, max order size, trades-only mode)
+
+---
+
+## What it *doesn’t* do
+
+- **No profit guarantees**. If the target trader jumps off a cliff, the bot will politely ask if you’d like to join them.
+- **Not a “magic arbitrage printer.”** It’s copy-trading. (If you want true arbitrage, you’ll likely need additional routing, pricing, and latency work.)
+
