@@ -25,3 +25,40 @@ If you’ve been looking for:
 - **No profit guarantees**. If the target trader jumps off a cliff, the bot will politely ask if you’d like to join them.
 - **Not a “magic arbitrage printer.”** It’s copy-trading. (If you want true arbitrage, you’ll likely need additional routing, pricing, and latency work.)
 
+---
+
+## Quick start (5 minutes, assuming the market gods allow it)
+
+### Prereqs
+
+- **Node.js**: `>= 20`
+- **A funded Polymarket account**
+- Your **EOA private key** and **Polymarket proxy/funder address** (from the Polymarket UI)
+
+### Install
+
+```bash
+npm install
+```
+
+### Configure
+
+Create `.env` from the example:
+
+```bash
+copy .env.example .env
+```
+
+Then edit `.env` with your values (see below).
+
+### Run (dev)
+
+```bash
+npm run dev
+```
+
+### Run (production-ish)
+
+```bash
+npm start
+```
