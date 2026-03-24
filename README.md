@@ -73,3 +73,22 @@ All config is via environment variables (see `.env.example`).
 
 Pick one:
 - **`COPY_TARGET_USER`**: target proxy address *or* username (the bot will try to resolve username → proxy)
+
+### Core knobs
+
+| Variable | What it controls | Example |
+|---|---|---|
+| `COPY_POLL_INTERVAL_MS` | How often to poll for new activity | `15000` |
+| `COPY_ACTIVITY_LIMIT` | How many recent activities to consider per poll | `100` |
+| `COPY_SIZE_MULTIPLIER` | Multiply copied trade size | `1` |
+| `COPY_MAX_ORDER_USD` | Hard cap per copied order (0 = no cap) | `25` |
+| `COPY_TRADES_ONLY` | If `true`, avoids copying non-trade activity | `true` |
+
+### Your wallet / Polymarket account
+
+| Variable | Required | Notes |
+|---|---:|---|
+| `POLYMARKET_PRIVATE_KEY` | ✅ | 64 hex chars (with or without `0x`) |
+| `POLYMARKET_ADDRESS` | ✅ | Your Polymarket proxy/funder address (from UI) |
+| `POLYMARKET_SIGNATURE_TYPE` | ❌ | Usually auto-detected; override only if needed |
+| `POLYMARKET_CHAIN_ID` | ❌ | Defaults to Polygon in most setups |
