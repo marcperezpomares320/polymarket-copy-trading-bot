@@ -62,3 +62,14 @@ npm run dev
 ```bash
 npm start
 ```
+
+---
+
+## Configuration
+
+All config is via environment variables (see `.env.example`).
+
+### Copy target
+
+Pick one:
+- **`COPY_TARGET_USER`**: target proxy address *or* username (the bot will try to resolve username → proxy)
