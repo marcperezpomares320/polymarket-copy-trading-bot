@@ -92,3 +92,11 @@ Pick one:
 | `POLYMARKET_ADDRESS` | ✅ | Your Polymarket proxy/funder address (from UI) |
 | `POLYMARKET_SIGNATURE_TYPE` | ❌ | Usually auto-detected; override only if needed |
 | `POLYMARKET_CHAIN_ID` | ❌ | Defaults to Polygon in most setups |
+
+---
+
+## Safety / “please don’t DM me at 3AM”
+
+- **Never commit your `.env`**. If you do, the internet will treat it like free samples at Costco.
+- Consider running on a **fresh wallet** with limited funds while testing.
+- Start with `COPY_SIZE_MULTIPLIER=0.1` and a small `COPY_MAX_ORDER_USD`.
