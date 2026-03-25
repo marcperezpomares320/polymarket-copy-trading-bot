@@ -134,3 +134,4 @@ PRs welcome. If you add a feature, please also add:
 
 ## Disclaimer
 
+This software is for educational purposes. You are responsible for how you use it. Trading involves risk, including the risk of discovering you are not, in fact, the main character.
