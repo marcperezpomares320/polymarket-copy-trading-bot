@@ -100,3 +100,23 @@ Pick one:
 - **Never commit your `.env`**. If you do, the internet will treat it like free samples at Costco.
 - Consider running on a **fresh wallet** with limited funds while testing.
 - Start with `COPY_SIZE_MULTIPLIER=0.1` and a small `COPY_MAX_ORDER_USD`.
+
+---
+
+## Troubleshooting
+
+- **`POLYMARKET_PRIVATE_KEY is required...`**  
+  Your key is missing or not valid hex. The bot accepts **64 hex chars** with optional `0x`.
+
+- **“Could not resolve username to proxy”**  
+  Use a **proxy address** (0x…) for `COPY_TARGET_USER` or set the correct target.
+
+---
+
+## FAQ
+
+### Is this “arbitrage”?
+It can be part of an arbitrage workflow, but by itself it’s primarily **copy trading**. If you’re building true arbitrage, you’ll probably add market scanning, price diff logic, and execution routing.
+
+### Is it fast?
+It’s **poll-based** (`COPY_POLL_INTERVAL_MS`). If you need low-latency mirroring, you’ll want a streaming approach.
