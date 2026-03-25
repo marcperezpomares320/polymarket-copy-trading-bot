@@ -120,3 +120,17 @@ It can be part of an arbitrage workflow, but by itself it’s primarily **copy t
 
 ### Is it fast?
 It’s **poll-based** (`COPY_POLL_INTERVAL_MS`). If you need low-latency mirroring, you’ll want a streaming approach.
+
+---
+
+## Contributing
+
+PRs welcome. If you add a feature, please also add:
+- a sensible default
+- a safe guardrail (limits > YOLO)
+- and a short explanation in this README
+
+---
+
+## Disclaimer
+
